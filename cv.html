@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional CV</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .cv-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .sidebar {
+        flex: 1;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        min-width: 250px;
+      }
+      .main-content {
+        flex: 2;
+        padding: 20px;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #ecf0f1;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .skill-bar {
+        background-color: #ddd;
+        height: 20px;
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+      .skill-level {
+        background-color: #3498db;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .contact-info p,
+      .skills .skill {
+        margin: 0;
+        padding: 5px 0;
+      }
+      .skills .skill {
+        margin-bottom: 10px;
+      }
+      .experience,
+      .education {
+        margin-bottom: 20px;
+      }
+      .experience h3,
+      .education h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+      .experience p,
+      .education p {
+        margin: 5px 0;
+      }
+      .experience ul,
+      .education ul {
+        list-style-type: disc;
+        margin: 10px 0 0 20px;
+      }
+      .experience ul li,
+      .education ul li {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 600px) {
+        .cv-container {
+          flex-direction: column;
+        }
+      }
+      @media print {
+        body {
+          width: 210mm; /* A4 width */
+          height: 297mm; /* A4 height */
+          margin: 0;
+          padding: 20mm; /* Adjust padding to fit content */
+          box-sizing: border-box;
+        }
+        .cv-container {
+          box-shadow: none; /* Remove shadows for printing */
+          border-radius: 0; /* Remove rounded corners for printing */
+        }
+        .sidebar, .main-content {
+          padding: 10mm; /* Adjust padding for print */
+        }
+        .profile-pic {
+          width: 120px; /* Adjust size for print */
+          height: 120px;
+        }
+        .skill-bar {
+          height: 15px; /* Adjust height for print */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="sidebar">
+        <img
+          src="profile-pic.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+          id="profilePic"
+        />
+        <h2>Contact</h2>
+        <div class="contact-info">
+          <p>Chauffeur SPL</p>
+          <p>Email: carbunarusilviu@yahoo.com</p>
+          <p>Phone: 0758527921</p>
+          <p>Location: 30 rue Schweighaeuser 67000-STRASBOURG, France</p>
+         
+        </div>
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            Sécurité
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Gestion Du Temps
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Entretien Du Véhicule
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Service Client
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Planification
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <h1>Coravu Silviu Serban</h1>
+        <div class="section experience">
+          <h2>Experience Professionnelle</h2>
+          <div>
+            <p>1/2024 - 7/2024 Interim Solano-Chauffeur spl routier,Tras-Stat</p>
+            <p>11/2022 - 12/2023 Chauffeur spl routier int-international TRANSPORT-XPO </p>
+            <p>12/2019 - 8/2022 Chauffeur super poids lourd TRANSPORT-SATC </p>
+            <p>11/2019 - 12/2019 Chauffeur benne TP-SUD BETON,LE BAR SUL LOUP</p>
+            <p>8/2019 - 12/2019 Chauffeur super poids lourd-TRANSPORT MONACO LOGISTIQUE,TRANSPORT RG,TRANSCAN,CONGEMAT </p>
+            <p>2/2018 - 6/2019 Chauffeur super poids lourd -PARTENAIRE NANTES TRANSPORT TRANSCONTAL ATLANTIQUE,RAVE DISTRIBUTION,THEBAULT LOGISTIQUE,TRANSPORT TESSIERE </p>
+            <p>2/2017 - 2/2018 Chauffeur super poids lourd -INTER CONSEIL </p>
+            <p>2/2016 - 2/2017 Chauffeur super poids lourd -SAS ENV </p>
+           
+           
+          </div>
+        </div>
+        <div class="section education">
+          <h2>Formation</h2>
+          <div>
+            <h3>Technicien</h3>
+            <p>Année d'obtention du diplôme: 2004/2008</p>
+            <ul>
+              <li>Baccalauréat Technologique/Technicien, Mécanique Lycée Tudor Vladimirescu.</li>
+              <li>Drobeta-Turnu-Severin, Roumanie.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Compétences</h2>
+          <ul>
+            <li>Formation poussée sur les techniques de conduit sure</li>
+            <li>Formation au conduit défensiv</li>
+            <li>Conduire un véhicule nécessitant une habilitation-FIMO 2015</li>
+            <li>Déplacement de produits dangereux nécessitant une habilitation-ADR 2015 </li>
+            <li>Chargement/déchargement d'un véhicule manuellement ou à l'aide d'engins non motorisés de manutention</li>
+            <li>Déplacements régionaux, nationaux et internationaux</li>
+            <li>Réaliser des formalités douanières auprès de services frontaliers</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Permis</h2>
+          <ul>
+            <li>B-Véhicule léger</li>
+            <li>BE-Véhicule léger+remorque(PTAC > 4,25T)</li>
+            <li>C1-Poids lourd < 7,5T</li>
+            <li>C-Poids lourd + remorque </li>
+            <li>CE-Poids lourd + remorque(=EC)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle profile picture upload
+      document.addEventListener("DOMContentLoaded", function () {
+        const profilePic = document.getElementById("profilePic");
+
+        profilePic.addEventListener("click", function () {
+          const input = document.createElement("input");
+          input.type = "file";
+          input.accept = "image/*";
+
+          input.onchange = function (event) {
+            const file = event.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = function (e) {
+                profilePic.src = e.target.result;
+              };
+              reader.readAsDataURL(file);
+            }
+          };
+
+          input.click();
+        });
+      });
+    </script>
+  </body>
+</html>

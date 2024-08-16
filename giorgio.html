@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional CV</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .cv-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .sidebar {
+        flex: 1;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        min-width: 250px;
+      }
+      .main-content {
+        flex: 2;
+        padding: 20px;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #ecf0f1;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .skill-bar {
+        background-color: #ddd;
+        height: 20px;
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+      .skill-level {
+        background-color: #3498db;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .contact-info p,
+      .skills .skill {
+        margin: 0;
+        padding: 5px 0;
+      }
+      .skills .skill {
+        margin-bottom: 10px;
+      }
+      .experience,
+      .education {
+        margin-bottom: 20px;
+      }
+      .experience h3,
+      .education h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+      .experience p,
+      .education p {
+        margin: 5px 0;
+      }
+      .experience ul,
+      .education ul {
+        list-style-type: disc;
+        margin: 10px 0 0 20px;
+      }
+      .experience ul li,
+      .education ul li {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 600px) {
+        .cv-container {
+          flex-direction: column;
+        }
+      }
+      @media print {
+        body {
+          width: 210mm; /* A4 width */
+          height: 297mm; /* A4 height */
+          margin: 0;
+          padding: 20mm; /* Adjust padding to fit content */
+          box-sizing: border-box;
+        }
+        .cv-container {
+          box-shadow: none; /* Remove shadows for printing */
+          border-radius: 0; /* Remove rounded corners for printing */
+        }
+        .sidebar, .main-content {
+          padding: 10mm; /* Adjust padding for print */
+        }
+        .profile-pic {
+          width: 100px; /* Adjust size for print */
+          height: 100px;
+        }
+        .skill-bar {
+          height: 10px; /* Adjust height for print */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="sidebar">
+        <img
+          src="profile-pic.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+          id="profilePic"
+        />
+        <h2>Contact</h2>
+        <div class="contact-info">
+          <p>Email: giorgiocalagiu@gmail.com</p>
+          <p>Phone: 015235796734</p>
+          <p>Location: Vreden 48691, Süringstrasse 68, Germany</p>
+          <p>GitHub: https://github.com/Coyote1983hg/</p>
+        </div>
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            Dart
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Flutter
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            JavaScript
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            CSS
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            HTML
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <h1>Calagiu Gheorghe</h1>
+        <div class="section">
+          <h2>Summary</h2>
+          <p>
+            I am a passionate mobile application developer with experience in using the Dart programming language and the Flutter framework to create dynamic and responsive mobile applications. I have a solid understanding of front-end technologies, including HTML, CSS, and a basic knowledge of JavaScript.
+          </p>
+        </div>
+        <div class="section experience">
+          <h2>Work Experience</h2>
+          <div>
+            <h3>App Developer</h3>
+            <p>December 2023 - September 2024</p>
+            <ul>
+              <li>I studied application development.</li>
+              <li>I worked with various tools.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Logistics Worker</h3>
+            <p>November 2021 - September 2023</p>
+            <ul>
+              <li>Schmitz Cargobull, Vreden</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Truck Driver</h3>
+            <p>July 2014 - August 2021</p>
+            <ul>
+              <li>Spedition Bellen, Vreden</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Dog Trainer</h3>
+            <p>July 2002 - August 2014</p>
+            <ul>
+              <li>Alevamento del Chianti, Italy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section education">
+          <h2>Education</h2>
+          <div>
+            <h3>Application Developer</h3>
+            <p>The Year Of Receiving The Diploma: 2023/2024</p>
+            <ul>
+              <li>Berlin, App Academy.</li>
+              <li>Graduation Diploma.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Certifications</h2>
+          <ul>
+            <li>High School, Romania, 1994-1998</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Languages</h2>
+          <ul>
+            <li>German - Good</li>
+            <li>English - Good</li>
+            <li>Romanian - Native Language</li>
+            <li>Italian - Native Language</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle profile picture upload
+      document.addEventListener("DOMContentLoaded", function () {
+        const profilePic = document.getElementById("profilePic");
+
+        profilePic.addEventListener("click", function () {
+          const input = document.createElement("input");
+          input.type = "file";
+          input.accept = "image/*";
+
+          input.onchange = function (event) {
+            const file = event.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = function (e) {
+                profilePic.src = e.target.result;
+              };
+              reader.readAsDataURL(file);
+            }
+          };
+
+          input.click();
+        });
+      });
+    </script>
+  </body>
+</html>

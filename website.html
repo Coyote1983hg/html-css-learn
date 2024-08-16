@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional CV</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .cv-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .sidebar {
+        flex: 1;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        min-width: 250px;
+      }
+      .main-content {
+        flex: 2;
+        padding: 20px;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #ecf0f1;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .skill-bar {
+        background-color: #ddd;
+        height: 20px;
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+      .skill-level {
+        background-color: #3498db;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .contact-info p,
+      .skills .skill {
+        margin: 0;
+        padding: 5px 0;
+      }
+      .skills .skill {
+        margin-bottom: 10px;
+      }
+      .experience,
+      .education {
+        margin-bottom: 20px;
+      }
+      .experience h3,
+      .education h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+      .experience p,
+      .education p {
+        margin: 5px 0;
+      }
+      .experience ul,
+      .education ul {
+        list-style-type: disc;
+        margin: 10px 0 0 20px;
+      }
+      .experience ul li,
+      .education ul li {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 600px) {
+        .cv-container {
+          flex-direction: column;
+        }
+      }
+      @media print {
+        body {
+          width: 210mm; /* A4 width */
+          height: 297mm; /* A4 height */
+          margin: 0;
+          padding: 20mm; /* Adjust padding to fit content */
+          box-sizing: border-box;
+        }
+        .cv-container {
+          box-shadow: none; /* Remove shadows for printing */
+          border-radius: 0; /* Remove rounded corners for printing */
+        }
+        .sidebar, .main-content {
+          padding: 10mm; /* Adjust padding for print */
+        }
+        .profile-pic {
+          width: 100px; /* Adjust size for print */
+          height: 100px;
+        }
+        .skill-bar {
+          height: 10px; /* Adjust height for print */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="sidebar">
+        <img
+          src="profile-pic.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+          id="profilePic"
+        />
+        <h2>Contact</h2>
+        <div class="contact-info">
+          <p>Email: elenacoravu@yahoo.com</p>
+          <p>Phone: +33778105472</p>
+          <p>Location: 30 rue Schweighaeuser 67000-STRASBOURG, France</p>
+        </div>
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            Leadership
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Opérations
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Clientèle
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Finance
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            Marketing
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <h1>Coravu Catalina Elena</h1>
+        <div class="section">
+          <h2>Summary</h2>
+          <p>
+            Avec une vaste expérience dans le secteur hôtelier en tant que Responsable d'hotél, j'excelle dans la gestion d'équipe, l'optimisation des opérations et l'amélioration de la satisfaction client. Mes compétences incluent la mise en œuvre de stratégies de marketing efficaces et la gestion financière rigoureuse.
+          </p>
+        </div>
+        <div class="section experience">
+          <h2>Experience Professionnelle</h2>
+          <div>
+            <h3>Cheff - Secteur Nantes</h3>
+            <p>November 2021 - Présent</p>
+            <ul>
+              <li>Recrutement des salariés.</li>
+              <li>Encadrer des équipes de taille variable.</li>
+              <li>Maintenir le niveau de motivation et d'activité requis.</li>
+              <li>Mettre en place une organisation du travail collective et individuelle.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Gouvernante-Multicite</h3>
+            <p>Mars 2021 - Octomber 2021</p>
+            <ul>
+              <li>Hotel Okko, Nantes.</li>
+              <li>Hotel Residhome, Nantes.</li>
+              <li>Hotel Oceania, Nantes Centre.</li>
+              <li>Hotel Mercure, Nantes.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Gouvernante en hotel - Mercure Nantes</h3>
+            <p>Décembre 2019 - Peut 2020</p>
+            <ul>
+              <li>Mettre le client au centre de la finalité du travail d'étages.</li>
+              <li>Adapter son comportament à la diversité dela clientelé.</li>
+              <li>Travailler en autonomie.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section education">
+          <h2>Formation</h2>
+          <div>
+            <h3>Formation Gouvernante En Hotelliere</h3>
+            <p>Année d'obtention du diplôme: 2017/2018</p>
+            <ul>
+              <li>Creteil Paris, 2017 Stage-Hôtel La Maison Champs Elysés, Paris.</li>
+              <li>Diplômé avec mention.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Universite D'Economie Et Administration, Roumanie, 2004-2007</li>
+            <li>Universite Comptabilite Et Gestion Financiare, 1996-1999</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Languages</h2>
+          <ul>
+            <li>Français - Super-bon</li>
+            <li>English - Intermediate</li>
+            <li>Roumain - Super-bon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle profile picture upload
+      document.addEventListener("DOMContentLoaded", function () {
+        const profilePic = document.getElementById("profilePic");
+
+        profilePic.addEventListener("click", function () {
+          const input = document.createElement("input");
+          input.type = "file";
+          input.accept = "image/*";
+
+          input.onchange = function (event) {
+            const file = event.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = function (e) {
+                profilePic.src = e.target.result;
+              };
+              reader.readAsDataURL(file);
+            }
+          };
+
+          input.click();
+        });
+      });
+    </script>
+  </body>
+</html>
